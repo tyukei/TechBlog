@@ -1,0 +1,188 @@
+/* @theme neon */
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+:root {
+  --code-background-color: rgb(34, 34, 49);
+}
+
+section {
+    background-color: rgb(19, 24, 40);
+}
+
+section.title {
+  font-size: 32px;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-shadow:0 0 15px aqua;
+  padding-left: 16px;
+}
+
+h2, h3 {
+  padding-left: 16px;
+}
+
+section::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 90%; height: 85%;
+  display: block;
+  border: 4px solid white;
+  border-radius: 20px;
+  box-shadow: 0 0 15px aqua,  0 0 15px aqua inset;
+}
+
+section::after {
+  font-weight: bold;
+  text-shadow:0 0 15px red;
+  color: rgb(255, 173, 173);
+}
+
+pre {
+  border: 2px solid white;
+  padding: 5px; /* 不自然に太くなるのを回避 */
+  background-color: rgb(19, 24, 40);
+  box-shadow: 0 0 5px aqua,  0 0 5px aqua inset;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.4rem;
+}
+
+pre > code > svg > foreignObject{
+  background: var(--code-background-color);
+}
+
+pre > code > svg > foreignObject span{
+  background: var(--code-background-color);
+  color: white;
+}
+
+.hljs-tag {
+  color: lightgray;
+}
+
+.hljs-string {
+  color: rgb(11, 227, 227);
+}
+
+.hljs-attr {
+  color: rgb(209, 82, 244);
+}
+
+.hljs-name {
+  color: greenyellow;
+}
+
+h1::before {
+  content: "▶";
+  text-shadow:0 0 15px red;
+  padding-right: 16px;
+  font-size: 0.8em;
+  color: rgb(255, 136, 136);
+}
+
+p {
+  padding-left: 30px;
+}
+
+strong {
+  color: rgb(255, 239, 239);
+  text-shadow:0 0 10px red;
+}
+
+footer {
+  color: rgb(183, 183, 183);
+  background: none;
+  transform: translate(35px,8px);
+}
+
+
+.flex {
+  display: flex; /*横並び*/
+  /*flex-direction: column; 縦並び*/
+}
+.flex .text {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.flex .image {
+  width: 300px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* example 
+<div class="flex">
+    <p class="text">
+    <ul>
+    <li>android / ios</li>
+    <li>windows / MacOS / linux</li>
+    <li>AR / VR / 2D</li>
+    </ul>
+    </p>
+    <figure class="image"><img src="https://rightcode.co.jp/wp-content/uploads/2019/09/unity-logo.png"></img>
+</div>
+*/
+
+.container {
+  display: flex; /* flexbox */
+  flex-wrap: wrap; /* 折返し指定 */
+}
+
+.container div {
+  width: calc(50%); /*50%→２個で1行分 margin padding分を引く */
+  text-align: center;
+  vertical-align: middle;
+}
+
+.container_right {
+  display: flex; /* flexbox */
+  flex-wrap: wrap; /* 折返し指定 */
+}
+
+.container_right div {
+  width: calc(50%); /*50%→２個で1行分 margin padding分を引く */
+  text-align: left;
+}
+
+/*
+<div class="container">
+<div>
+    <ul>
+    <li>making sound</li>
+    <li>create animation</li>
+    </ul>
+</div>
+<div>
+  <figure class="image"><img src="https://rightcode.co.jp/wp-content/uploads/2019/09/unreal-engine-4-logo.png" alt=""></figure>
+</div>
+<div>
+    <ul>
+    <li>Unreal Engine 4(C++)</li>
+    <li>Cocos2d-x(C++)</li>
+    <li>Lumberyard(C++)</li>
+    </ul>
+</div>
+<div>
+  <figure class="image"><img src="https://rightcode.co.jp/wp-content/uploads/2019/09/cocos2d-x-logo.png" alt=""></figure>
+</div>
+</div>
+*/

@@ -1,0 +1,105 @@
+/* @theme custom */
+
+@import "gaia";
+
+section::after,
+footer {
+  color: white;
+  background-color: #72a3f7;
+  height: 50px;
+  margin-bottom: 0px;
+  font-size: 80%;
+  padding: 0px 20px 0px 20px;
+  background-image: url(../themes/img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position-x: 700px;
+  background-position-y: center;    
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);    
+}
+
+section {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+
+section.top {
+  background-color: rgb(255, 255, 255);
+  background-image: url(../themes/img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position-x: center;
+  background-position-y: 50px;
+}
+
+section.top h1 {
+  color: slategray;
+  font-size: 2.3rem;
+  margin-top:250px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section.top h2 {
+  color: rgb(68, 67, 67);
+  font-size: 0.65rem;
+  margin-top: 0px;
+  text-align: right;
+}
+
+section.normal {
+  padding: 50px 50px 50px 50px;
+  background-image: url(../themes/img/logo2.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position-x: 750px;
+  background-position-y: 50px;
+}
+
+section.normal h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #44aada;
+  margin-bottom: -15px;
+}
+
+section.normal h2 {
+  font-size: 1.3rem;
+}
+
+section.normal h3 {
+  font-size: 1.1rem;
+}
+
+section.normal h4 {
+  font-size: 1.0rem;
+}
+
+section.impact h1{
+  font-size: 5rem;
+}
+section.impact h2{
+  font-size: 3rem;
+  background-color: gray;
+}
+section.impact h3{
+  font-size: 3rem;
+}
+section.impact h4{
+  font-size: 1.5rem;
+}
+section.impact h5{
+  font-size: 1rem;
+}
+section.final {
+  background-color: white;
+  background-image: url(../themes/img/logo3.png);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position-x: center;
+  background-position-y: center;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  font-family: "MS 明朝";
+  font-weight: 800;
+}
