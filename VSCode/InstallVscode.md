@@ -9,7 +9,7 @@ https://code.visualstudio.com/download
 ## Automatically start download
 <img width="1066.5" alt="image.png (177.0 kB)" src="https://img.esa.io/uploads/production/attachments/15481/2023/04/08/88504/de7f97d5-f45e-45b9-9ea1-83ac9f0791a8.png">
 
-## while wating, what is VS Code?
+## while waiting, what is VS Code?
 > Visual Studio Code (VS Code) is a free and open-source code editor developed by Microsoft for Windows, Linux, and macOS. It is designed to be lightweight, fast, and customizable, and it includes features such as syntax highlighting, code completion, debugging, version control integration, and more. VS Code also supports a wide range of programming languages and frameworks, including JavaScript, Python, C++, and many more. It has gained popularity among developers due to its user-friendly interface and a large number of extensions that allow users to customize their environment for their specific needs.
 
 
