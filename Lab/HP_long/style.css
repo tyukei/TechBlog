@@ -388,5 +388,16 @@ particl
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    position: absolute;
+}
+
+.box h1 {
+    text-align: center;
+}
+
+.box h2 {
+    text-align: left;
+}
+
+.box p {
+    text-align: left;
 }
