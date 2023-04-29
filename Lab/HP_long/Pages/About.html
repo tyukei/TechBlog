@@ -1,122 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>ParticleJS - 初めてのParticleJS</title>
-
-    <!-- CreateJSのライブラリー読み込み -->
-    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-
-    <!-- パーティクルシステムのライブラリー読み込み -->
-    <script src="../Particle/particles.min.js"></script>
-
-    <!-- JS -->
-    <script>
-        var particleSystem = null;
-        var stage = null;
-
-        //  ウィンドウのロードが終わり次第、初期化コードを呼び出す。
-        window.addEventListener('load', function () {
-            // Stageオブジェクトを作成します。表示リストのルートになります。
-            stage = new createjs.Stage('myCanvas');
-
-            // パーティクルシステム作成します。
-            particleSystem = new particlejs.ParticleSystem();
-
-            // パーティクルシステムの描画コンテナーを表示リストに登録します。
-            stage.addChild(particleSystem.container);
-
-            // Particle Develop( http://ics-web.jp/projects/particle-develop/ ) から書きだしたパーティクルの設定を読み込む
-            particleSystem.importFromJson(
-                // パラメーターJSONのコピー＆ペースト ここから--
-                {
-                    'bgColor': '#00000',
-                    'width': 500,
-                    'height': 500,
-                    'emitFrequency': '100',
-                    'startX': 480,
-                    'startXVariance': 400,
-                    'startY': 250,
-                    'startYVariance': 50,
-                    'initialDirection': '0',
-                    'initialDirectionVariance': '360',
-                    'initialSpeed': '5',
-                    'initialSpeedVariance': '3.7',
-                    'friction': '0.038',
-                    'accelerationSpeed': '0.0',
-                    'accelerationDirection': '0',
-                    'startScale': 1,
-                    'startScaleVariance': 0.79,
-                    'finishScale': '0',
-                    'finishScaleVariance': '0',
-                    'lifeSpan': '50',
-                    'lifeSpanVariance': '196',
-                    'startAlpha': '1',
-                    'startAlphaVariance': '0',
-                    'finishAlpha': '0.35',
-                    'finishAlphaVariance': 0.5,
-                    'shapeIdList': [
-                        'blur_circle',
-                        'circle'
-                    ],
-                    'startColor': {
-                        'hue': 222,
-                        'hueVariance': '55',
-                        'saturation': '71',
-                        'saturationVariance': '78',
-                        'luminance': '83',
-                        'luminanceVariance': '16'
-                    },
-                    'blendMode': true,
-                    'alphaCurveType': '1'
-                }
-                // パラメーターJSONのコピー＆ペースト ここまで---
-            );
-
-            // フレームレートの設定
-            createjs.Ticker.framerate = 60;
-            // requestAnimationFrameに従った呼び出し
-            createjs.Ticker.timingMode = createjs.Ticker.RAF;
-            // 定期的に呼ばれる関数を登録
-            createjs.Ticker.addEventListener('tick', handleTick);
-        });
-
-        function handleTick() {
-            // パーティクルの発生・更新
-            particleSystem.update();
-
-            // 描画を更新する
-            stage.update();
-        }
-    </script>
-
-    <!-- CSS -->
-    <style>
-        canvas {
-            background-color: black;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #323232;
-            overflow: hidden;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水谷研究室 - ホームページ</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 
 <body>
-    <div>
-        <canvas width="960" height="540" id="myCanvas"></canvas>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="no-active"><img src="../img/icon50.png"></img></a></li>
+                <li><a href="About.html" class="active">研究内容</a></li>
+                <li><a href="Members.html" class="no-active">研究室メンバー</a></li>
+                <li><a href="Access.html" class="no-active">アクセス</a></li>
+                <li><a href="Connect.html" class="no-active">つながり</a></li>
+                <li><a href="Contact.html" class="no-active">募集情報</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box-parent">
+        <div class="box">
+        </div>
     </div>
+
+    <canvas class="particle-background"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script type='text/javascript' src="../Particle/particle.js"></script>
 </body>
 
 </html>

@@ -53,8 +53,6 @@ header {
     /* 幅いっぱいを指定 */
     height: 50px;
     /* 高さを50pxに指定 */
-    padding: 20px 50px;
-    /* ヘッダーに上下左右それぞれ余白を指定 */
     box-sizing: border-box;
     /* padding分を含んで幅を100%にするため */
     position: fixed;
@@ -76,12 +74,44 @@ header h1 {
 }
 
 header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
 header nav li {
     margin-right: 20px;
 }
+
+nav li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ddd;
+}
+
+nav li a.active {
+    padding: 10px 20px;
+    /* ヘッダーに上下左右それぞれ余白を指定 */
+    color: #ccc;
+    pointer-events: none;
+}
+
+nav li a.no-active {
+    padding: 10px 20px;
+    /* ヘッダーに上下左右それぞれ余白を指定 */
+}
+
+nav li a img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
 
 /* hero styles */
 #hero {
@@ -94,6 +124,7 @@ header nav li {
     justify-content: center;
     color: #fff;
 }
+
 
 #hero h2 {
     font-size: 48px;
@@ -339,24 +370,20 @@ particl
 ===================================*/
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 
-.particle-back {
-    font-family: 'Merienda', cursive;
-    background: #000;
-    height: 30vh;
-}
-
-.background {
+.particle-background {
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: -1;
+    background: black;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box-parent {
+    text-align: center;
 }
 
 .box {
+    display: inline-block;
     background: #fff;
     border-radius: 5px;
     padding: 20px;
