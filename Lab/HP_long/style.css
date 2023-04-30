@@ -81,10 +81,15 @@ header nav ul {
 }
 
 header nav li {
-    margin-right: 20px;
+    text-align: center;
+    width: 15vw;
+    margin-right: 1vw;
 }
 
 nav li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     display: block;
     color: #333;
     text-decoration: none;
@@ -368,7 +373,6 @@ nav li a img {
 /*==================================================
 particl
 ===================================*/
-@import url('https://fonts.googleapis.com/css?family=Merienda');
 
 .particle-background {
     position: absolute;
@@ -376,19 +380,28 @@ particl
     left: 0;
     z-index: -1;
     background: black;
+    height: 30vh;
+}
+
+.h1-particle {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box-parent {
-    border-radius: 10px;
+    margin-top: 30vh;
     text-align: center;
-    margin: 0 auto;
-    width: max-content;
     background-color: rgb(255, 255, 255);
 }
 
 
 .fadein {
-    border-radius: 10px;
     text-align: center;
     opacity: 0;
     animation: fadein 6s ease forwards;
@@ -405,25 +418,25 @@ particl
 }
 
 .txt02 {
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 .txt03 {
-    animation-delay: 7s;
+    animation-delay: 3s;
 }
 
 .txt04 {
-    animation-delay: 10s;
+    animation-delay: 4s;
 }
 
 .txt05 {
-    animation-delay: 13s;
+    animation-delay: 5s;
 }
 
 .txt06 {
-    animation-delay: 16s;
+    animation-delay: 6s;
 }
 
 .txt07 {
-    animation-delay: 19s;
+    animation-delay: 7s;
 }
