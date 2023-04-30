@@ -379,25 +379,52 @@ particl
 }
 
 .box-parent {
+    border-radius: 10px;
     text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(240, 248, 255, 0.362);
 }
 
-.box {
-    display: inline-block;
+
+.fadein {
+    border-radius: 10px;
+    text-align: center;
     background: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
+    opacity: 0;
+    animation: fadein 6s ease forwards;
 }
 
-.box h1 {
-    text-align: center;
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
 }
 
-.box h2 {
-    text-align: left;
+.txt01 {
+    animation-delay: 1s;
 }
 
-.box p {
-    text-align: left;
+.txt02 {
+    animation-delay: 4s;
+}
+
+.txt03 {
+    animation-delay: 7s;
+}
+
+.txt04 {
+    animation-delay: 10s;
+}
+
+.txt05 {
+    animation-delay: 13s;
+}
+
+.txt06 {
+    animation-delay: 16s;
+}
+
+.txt07 {
+    animation-delay: 19s;
 }
