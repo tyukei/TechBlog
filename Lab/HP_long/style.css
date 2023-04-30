@@ -380,7 +380,6 @@ particl
     left: 0;
     z-index: -1;
     background: black;
-    height: 30vh;
 }
 
 .h1-particle {
@@ -398,6 +397,8 @@ particl
     margin-top: 30vh;
     text-align: center;
     background-color: rgb(255, 255, 255);
+    opacity: 0;
+    animation: fadein 6s ease forwards;
 }
 
 
