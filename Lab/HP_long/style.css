@@ -135,62 +135,32 @@ nav li a img {
     font-size: 48px;
 }
 
+#top {
+    background-color: #f8f8f8;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
 /* research styles */
 #research {
     background-color: #fff;
     padding-bottom: 60px;
-}
-
-#research h2 {
     text-align: center;
 }
 
-#research h3 {
-    font-size: 24px;
-    margin-top: 40px;
-}
-
-#research p {
-    text-align: center;
-}
-
-/* publications styles */
-#publications {
+#members {
     background-color: #f8f8f8;
     padding-bottom: 60px;
-}
-
-#publications h2 {
     text-align: center;
-}
-
-#publications h3 {
-    font-size: 24px;
-    margin-top: 40px;
-}
-
-#publications p {
-    text-align: center;
-}
-
-#publications ul li {
-    margin-bottom: 10px;
 }
 
 /* connections styles */
 #connections {
     background-color: #fff;
     padding-bottom: 60px;
-}
-
-#connections h2 {
     text-align: center;
 }
 
-#connections h3 {
-    font-size: 24px;
-    margin-top: 40px;
-}
 
 #connections ul {
     display: flex;
@@ -209,13 +179,7 @@ nav li a img {
     padding-bottom: 60px;
 }
 
-#recruitment h2 {
-    text-align: center;
-}
 
-#recruitment p {
-    text-align: center;
-}
 
 .custom-button {
     background-color: #4CAF50;
@@ -233,13 +197,6 @@ nav li a img {
 .custom-button:hover {
     background-color: #3E8E41;
 }
-
-
-
-
-
-
-
 
 
 
@@ -380,6 +337,14 @@ particl
     left: 0;
     z-index: -1;
     background: black;
+}
+
+.particle-background-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: white;
 }
 
 .h1-particle {
