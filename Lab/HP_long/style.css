@@ -349,8 +349,19 @@ particl
 
 .h1-particle {
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: xx-large;
+    font-size: xxx-large;
     color: white;
+    text-align: center;
+    width: fit-content;
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1-particle-black {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: xxx-large;
+    color: black;
     text-align: center;
     width: fit-content;
     padding-top: 10%;
@@ -405,4 +416,8 @@ particl
 
 .txt07 {
     animation-delay: 7s;
+}
+
+.empty {
+    height: 100vh;
 }

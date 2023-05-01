@@ -25,11 +25,12 @@ window.onload = function () {
     Particles.init(
         {
             selector: '.particle-background',
-            maxParticles: 80,
-            sizeVariations: 30,
-            speed: 3,
+            maxParticles: 50,
+            sizeVariations: 50,
+            speed: 0.3,
             color: ['#D0D0D0', '#FFE5B4', '#BBBBBB'],
-            connectParticles: false
+            connectParticles: true,
+            minDistance: 300
         }
     );
 };

@@ -28,8 +28,8 @@ window.onload = function () {
             maxParticles: 100,
             sizeVariations: 15,
             speed: 3,
-            color: ['#D0D0D0', '#00796B', '#BBBBBB'],
-            connectParticles: true
+            color: ['#FFE5B4', '#00796B', '#BBBBBB'],
+            connectParticles: false
         }
     );
 };
